@@ -1470,9 +1470,9 @@ header .navbar-brand img {
 
 .banner-slider .img-object {
     position: absolute;
-    left: 35px;
+    left: 20px;
     bottom: 0;
-    width: 40%;
+    width: 28%;
 }
 
 .banner-slider .img-object.right {
@@ -1643,18 +1643,46 @@ svg.right-square.team {
     margin: auto;
 }
 
+.team-img ul{
+    display:none;
+    position: absolute;
+    padding-left: 5px;
+    top: 10px;
+    padding-right: 25px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.team-img:hover{
+    background-color: rgb(5, 150, 161, 0.3);
+    border-radius: 5px;;
+}
+
+.team-img:hover img{
+    opacity: 0.15;
+}
+
+.team-img:hover ul{
+    display: block;
+    text-align: left;
+}
+
 .team-tittle {
-    padding: 15px 50px 0 50px;
+    padding: 15px 20px 0 20px;
 }
 
 .name-img {
-    position: relative;
+    background-color: #9cc11a;
+    border-radius: 10px;
+}
+
+.name-img:hover{
+    background-color: #0596a1;
 }
 
 .name-img .name {
-    position: absolute;
-    top: 8px;
-    left: 26%;
+    padding: 8px 20px;
+    text-align: center;
     font-size: 24px;
     font-family: 'Raleway', sans-serif;
     color: #fff;
@@ -1716,10 +1744,6 @@ svg.right-square.team {
     position: absolute;
     top: 0;
     opacity: 0;
-}
-
-#team-carousal .item:hover .name-img .black-img {
-    opacity: 1;
 }
 
 /* ===================================
