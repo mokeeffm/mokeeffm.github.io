@@ -1254,6 +1254,17 @@ header .navbar-brand img {
     margin-top: -15px;
 }
 
+.portfolio-btn{
+    color: black !important;
+    border-color: black;
+}
+
+.portfolio-btn:hover{
+    background-color: #9cc11a;
+    color: white !important;
+    border-color: white;
+}
+
 .menu-company-details span {
     display: block;
     color: #FFFFFF;
@@ -1649,12 +1660,13 @@ svg.right-square.team {
     padding-left: 5px;
     top: 10px;
     padding-right: 30px;
-    font-size: 12px;
-    overflow: hidden;
+    font-size: 14px;
+    line-height: 20px;
+    color:#fff;
 }
 
 .team-img:hover{
-    background-color: rgb(5, 150, 161, 0.3);
+    background-color: rgb(5, 150, 161, 0.60);
     border-radius: 5px;;
 }
 
@@ -2777,7 +2789,7 @@ svg.right-square.team {
     .portfolio-sec .portfolio-links {
         display: none;
     }
-    .portfolio-sec .portfolio-footer.padding-top {
+    .padding-top-portfolio {
         padding-top: 50px;
     }
     .portfolio-sec .portfolio-footer .portfolio-mini-detail {
@@ -3059,7 +3071,7 @@ svg.right-square.team {
     .portfolio-sec .portfolio-links {
         display: none;
     }
-    .portfolio-sec .portfolio-footer.padding-top {
+    .padding-top-portfolio {
         padding-top: 50px;
     }
     .portfolio-sec .portfolio-footer .portfolio-mini-detail {
