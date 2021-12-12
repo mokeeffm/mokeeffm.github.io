@@ -1536,8 +1536,7 @@ header .navbar-brand img {
 }
 
 .feature-sec .card-body {
-    padding: 85px 49px;
-    padding-bottom: 50px;
+    padding: 105px 10px 50px 10px;
 }
 
 .feature-sec .card-text {
