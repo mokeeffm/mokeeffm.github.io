@@ -1254,9 +1254,28 @@ header .navbar-brand img {
     margin-top: -15px;
 }
 
+.portfolio-image .portfolio-logo{
+    display: block;
+    position: absolute;
+    height: 100px !important;
+    width: 100px !important;
+    top: 20px;
+    left: 20px;
+}
+
 .portfolio-btn{
-    color: black !important;
-    border-color: black;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 0 5px 0 0;
+    border: 1px solid black;
+    -webkit-transition: background-color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
 }
 
 .portfolio-btn:hover{
@@ -1489,9 +1508,9 @@ header .navbar-brand img {
 .banner-slider .img-object.right {
     position: absolute;
     right: 35px;
-    bottom: 6%;
+    bottom: 0;
     left: auto;
-    width: 50%;
+    width: 20%;
 }
 
 .banner-slider .img-object img {
@@ -1780,7 +1799,7 @@ svg.right-square.team {
 }
 
 .portfolio-sec .portfolio-carousel .portfolio-image {
-    box-shadow: 5px 5px 15px #e2e2e2;
+    box-shadow: 0 0 15px #dddddd;
 }
 
 .portfolio-sec .portfolio-links {
@@ -2194,8 +2213,8 @@ svg.right-square.team {
 ====================================== */
 
 .footer-style-1 {
-    padding: 5rem 0;
-    padding-top: 0;
+    /*padding: 5rem 0;*/
+    padding: 10px;
 }
 
 .footer-social ul {
@@ -2792,7 +2811,7 @@ svg.right-square.team {
         padding-top: 50px;
     }
     .portfolio-sec .portfolio-footer .portfolio-mini-detail {
-        margin-top: 15px;
+        /*margin-top: 10px;*/
     }
     .portfolio-sec .text {
         padding-top: 30px;
@@ -3074,10 +3093,10 @@ svg.right-square.team {
         padding-top: 50px;
     }
     .portfolio-sec .portfolio-footer .portfolio-mini-detail {
-        margin-top: 15px;
+        /*margin-top: 10px;*/
     }
     .portfolio-sec .portfolio-footer .portfolio-mini-heading {
-        font-size: 16px;
+        font-size: 20px;
     }
     .portfolio-sec .portfolio-footer .text {
         font-size: 14px;
