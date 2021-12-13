@@ -3259,3 +3259,24 @@ svg.right-square.team {
         right: -7%;
     }
 }
+
+.img-text-banner img{
+    width: 65%;
+    border-radius: 5%;
+}
+
+/*@media (max-width: 575px) {
+    .img-text-banner{
+        display: none;
+    }
+}*/
+
+.img-text-align-left img{
+    width: 24%;
+}
+
+@media (min-width: 992px) {
+    .img-text-align-left img{
+        width: 95%;
+    }
+}
