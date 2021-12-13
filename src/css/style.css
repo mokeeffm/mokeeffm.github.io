@@ -1257,10 +1257,33 @@ header .navbar-brand img {
 .portfolio-image .portfolio-logo{
     display: block;
     position: absolute;
-    height: 100px !important;
-    width: 100px !important;
-    top: 20px;
-    left: 20px;
+    width: 60px !important;
+    top: 0px;
+    left: 0px;
+}
+
+@media (min-width: 576px) {
+    .portfolio-image .portfolio-logo{
+        width: 70px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .portfolio-image .portfolio-logo{
+        width: 80px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .portfolio-image .portfolio-logo{
+        width: 90px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .portfolio-image .portfolio-logo{
+        width: 100px !important;
+    }
 }
 
 .portfolio-btn{
