@@ -795,7 +795,7 @@ header .navbar-brand {
     left: 25px;
     bottom: 20px;
     z-index: 1111;
-    width: 80px;
+    width: 160px;
 }
 
 header .navbar-brand img {
@@ -2742,7 +2742,7 @@ svg.right-square.team {
     header .navbar-brand {
         left: auto !important;
         bottom: auto;
-        width: 80px;
+        width: 120px;
         right: 0px;
         top: 16px;
     }
@@ -3026,7 +3026,7 @@ svg.right-square.team {
     header .navbar-brand {
         left: auto !important;
         bottom: auto;
-        width: 80px;
+        width: 100px;
         right: 0px;
         top: 16px;
     }
