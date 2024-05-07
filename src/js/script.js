@@ -49,15 +49,17 @@ jQuery(function($) {
            Header appear
         ====================================== */
     // if($(window).width() > 780) {
-    $(window).on('scroll', function() {
-
-        if ($(this).scrollTop() > 450) { // Set position from top to add class
-            $('.inner-header').addClass('header-appear');
-        } else {
-            $('.inner-header').removeClass('header-appear');
-        }
-
-    });
+    if (document.querySelector('body.text-page')) {
+        $('.inner-header').addClass('header-appear');
+    } else {
+        $(window).on('scroll', function() {
+            if ($(this).scrollTop() > 450) { // Set position from top to add class
+                $('.inner-header').addClass('header-appear');
+            } else {
+                $('.inner-header').removeClass('header-appear');
+            }
+        });
+    }
     // }else{
     //     // Set position from top to add class
     //     $('.inner-header').addClass('header-appear');
@@ -68,12 +70,11 @@ jQuery(function($) {
     /* ===================================
          arrow appear and scroll to top
      ====================================== */
-
-    $(window).on('scroll', function() {
-        if ($(this).scrollTop() > 500) {
-            $('.scroll-top-arrow').fadeIn('slow');
+     $(window).on('scroll', function() {
+        if ($(this).scrollTop() < 600) {
+            $('.scroll-top-arrow').removeClass("active");
         } else {
-            $('.scroll-top-arrow').fadeOut('slow');
+            $('.scroll-top-arrow').addClass("active");
         }
     });
 
@@ -203,7 +204,7 @@ jQuery(function($) {
         }
     });
 
-    $('#portfolio-arr-right').click(function() {
+    /*$('#portfolio-arr-right').click(function() {
         var owl = $('.portfolio-carousel');
         owl.owlCarousel();
         owl.trigger('next.owl.carousel');
@@ -212,7 +213,7 @@ jQuery(function($) {
         var owl = $('.portfolio-carousel');
         owl.owlCarousel();
         owl.trigger('prev.owl.carousel', [300]);
-    });
+    });*/
 
     /* ===================================
            slick for testimonial
