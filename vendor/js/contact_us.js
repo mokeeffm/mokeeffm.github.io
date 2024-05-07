@@ -110,18 +110,18 @@ $(".modal_contact_btn").on('click', function() {
 
     //simple validation at client's end
     var post_data, output;
-    var proceed = "true";
+    var proceed = true;
 
     var str = $('#modal-contact-form-data').serializeArray();
 
     $('#modal-contact-form-data input').each(function() {
         if (!$(this).val()) {
-            proceed = "false";
+            proceed = false;
         }
     });
 
     //everything looks good! proceed...
-    if (proceed === "true") {
+    if (proceed === true) {
         var pathArray = window.location.pathname.split('/');
         var secondLevelLocation = pathArray[3];
 
