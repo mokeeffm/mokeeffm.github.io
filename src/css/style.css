@@ -799,7 +799,8 @@ header .navbar-brand {
 }
 
 header .navbar-brand img {
-    max-width: 80%;
+    width: auto;
+    height: 100%;
 }
 
 /* ===================================
@@ -3025,10 +3026,10 @@ svg.right-square.team {
     }
     header .navbar-brand {
         left: auto !important;
-        bottom: auto;
+        bottom: auto !important;
         width: 100px;
         right: 0px;
-        top: 16px;
+        top: 10px;
     }
     /*Banner sec*/
     .banner-left-area {
@@ -3279,4 +3280,40 @@ svg.right-square.team {
     .img-text-align-left img{
         width: 95%;
     }
+}
+
+.portfolio-footer{
+    gap: 1em;
+}
+
+.portfolio-footer .d-flex {
+    flex: 1;
+}
+
+.text-page .header-appear {
+    width: auto;
+    background: transparent;
+    height: 80px;
+}
+.text-page .header-appear .navbar-brand {
+    display: block;
+    position: absolute;
+    left: auto !important;
+    bottom: auto !important;
+    right: 18px;
+    top: 0px;
+    height: 70px;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.scroll-top-arrow {
+    display: block !important;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.scroll-top-arrow:not(.active) {
+    transform: translateY(300%);
 }
